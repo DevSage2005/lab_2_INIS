@@ -1,0 +1,55 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #000;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, outline 0.2s ease;
+}
+
+/* Размеры */
+.btn--sm { height: 40px; padding: 8px 32px; font-size: 16px; }
+.btn--md { height: 52px; padding: 8px 48px; font-size: 18px; }
+.btn--lg { height: 52px; padding: 8px 64px; font-size: 20px; }
+
+/* Основной вариант — жёлтый, как в Figma */
+.btn--primary {
+  background: #F3D616;
+}
+.btn--primary:hover {
+  box-shadow: 0 4px 12.1px rgba(0, 0, 0, 0.25) inset;
+}
+.btn--primary:active {
+  outline: 2px solid #E9CD17;
+}
+
+/* Вторичный вариант */
+.btn--secondary {
+  background: transparent;
+  border: 2px solid #F3D616;
+}
+.btn--secondary:hover {
+  background: #F3D616;
+}
+.btn--secondary:active {
+  outline: 2px solid #E9CD17;
+}
+
+/* Ghost (если понадобится) */
+.btn--ghost {
+  background: transparent;
+}
+.btn--ghost:hover {
+  background: #f4f4f5;
+}
+
+/* Отключённая кнопка */
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

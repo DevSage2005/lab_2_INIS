@@ -1,0 +1,94 @@
+.accordion {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e4e4e7;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+  transition: border-color 0.2s ease;
+}
+
+.accordion--open {
+  border-color: #d4d4d8;
+}
+
+/* Заголовок */
+.accordion__header {
+  width: 100%;
+  padding: 14px 24px;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+}
+
+.accordion__title {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* Иконка +/− */
+.accordion__icon {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.accordion__icon-bar {
+  position: absolute;
+  background: #000;
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.accordion__icon-bar {
+  width: 14px;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.accordion__icon-bar--vertical {
+  width: 2px;
+  height: 14px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.accordion--open .accordion__icon-bar--vertical {
+  transform: translateX(-50%) rotate(90deg);
+  opacity: 0;
+}
+
+/* Плавное раскрытие */
+.accordion__content-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.accordion--open .accordion__content-wrap {
+  grid-template-rows: 1fr;
+}
+
+.accordion__content {
+  overflow: hidden;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.accordion__content > * {
+  padding: 0 24px 16px;
+  margin: 0;
+}
