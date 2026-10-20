@@ -2,7 +2,7 @@ import SpeakerCard from '../SpeakerCard/SpeakerCard.jsx';
 import Button from '../Button/Button.jsx';
 import './SpeakersSection.css';
 
-// ✅ Импортируем SVG — Vite вернёт URL-строку
+
 import svetlanaImg from '../../assets/svetlana.svg';
 import elenaImg from '../../assets/elena.svg';
 import ilyaImg from '../../assets/ilya.svg';
@@ -60,6 +60,7 @@ export default function SpeakersSection({ onRegister }) {
         {SPEAKERS.map((speaker) => (
           <SpeakerCard
             key={speaker.id}
+            id={speaker.id} // <--- Передаем ID
             name={speaker.name}
             role={speaker.role}
             company={speaker.company}

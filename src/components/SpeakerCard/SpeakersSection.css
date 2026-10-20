@@ -1,7 +1,7 @@
 .speakers-section {
   width: 100%;
-  max-width: 1440px;         /* было 1360px — чуть шире */
-  margin: 0 auto;            /* центрируем на широких экранах */
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 56px 56px 64px;
   background: #f5f5f5;
   border-radius: 16px;
@@ -46,7 +46,7 @@
 }
 
 .speakers-section__grid {
-  display: grid;                                          /* было flex */
+  display: grid;                                       
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 24px;
 }

@@ -2,8 +2,8 @@ import './Button.css';
 
 export default function Button({
   children,
-  variant = 'primary',   // 'primary' | 'secondary' | 'ghost'
-  size = 'md',           // 'sm' | 'md' | 'lg'
+  variant = 'primary',  
+  size = 'md',           
   onClick,
   type = 'button',
   disabled = false,

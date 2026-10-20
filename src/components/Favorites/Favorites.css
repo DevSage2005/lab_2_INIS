@@ -1,0 +1,20 @@
+.favorites {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+.favorites__icon {
+  color: #F3D616;
+  font-size: 20px;
+}
+
+.favorites__count {
+  color: #111;
+}

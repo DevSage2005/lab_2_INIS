@@ -19,5 +19,5 @@
 1. **Клонировать репозиторий:**
 
    ```bash
-   git clone <URL_репозитория>
+   git clone https://github.com/DevSage2005/lab_2_INIS.git
    cd it-conference-app

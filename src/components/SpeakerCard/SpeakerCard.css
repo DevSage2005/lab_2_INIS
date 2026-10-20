@@ -108,3 +108,36 @@
 .speaker-card__social:hover {
   color: #09090b;
 }
+
+
+.speaker-card__fav-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  background: #f4f4f5;
+  border: 1px solid #e4e4e7;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3f3f46;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speaker-card__fav-btn:hover {
+  background: #e4e4e7;
+}
+
+.speaker-card__fav-btn.is-active {
+  background: #F3D616;
+  border-color: #E9CD17;
+  color: #09090b;
+}
+
+.speaker-card__fav-btn.is-active:hover {
+  background: #e0c414;
+}
