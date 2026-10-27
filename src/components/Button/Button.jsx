@@ -1,23 +1,25 @@
-import './Button.css';
+import RBButton from 'react-bootstrap/Button';
 
 export default function Button({
   children,
-  variant = 'primary',  
-  size = 'md',           
+  variant = 'warning', 
+  size = 'md',
   onClick,
   type = 'button',
   disabled = false,
   ...rest
 }) {
   return (
-    <button
-      type={type}
-      className={`btn btn--${variant} btn--${size}`}
+    <RBButton
+      variant={variant}
+      size={size === 'lg' ? 'lg' : undefined}
       onClick={onClick}
+      type={type}
       disabled={disabled}
+      className="custom-btn"
       {...rest}
     >
       {children}
-    </button>
+    </RBButton>
   );
 }

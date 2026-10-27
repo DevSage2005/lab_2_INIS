@@ -1,5 +1,5 @@
 import { useFavoritesStore } from '../../store/useFavoritesStore';
-import './Favorites.css';
+
 
 export default function Favorites() {
   const favorites = useFavoritesStore((state) => state.favorites);
